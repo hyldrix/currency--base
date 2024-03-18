@@ -4,7 +4,7 @@ export const convertPLNToUSD = (PLN) => {
     return NaN
   } else if (typeof PLN !== 'number' && typeof PLN !== 'string') {
     return 'Error'
-  } else if (PLN <0){
+  } else if (PLN <= 0){
     return `$0.00`
   }
 
